@@ -1,0 +1,22 @@
+{
+  "name": "csco-uccx",
+  "version": "0.0.1",
+  "description": "A NodeJS Wrapper for the Cisco Contact Center Express Config API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drkchiloll/csco-uccx.git"
+  },
+  "author": "Sam Womack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drkchiloll/csco-uccx/issues"
+  },
+  "homepage": "https://github.com/drkchiloll/csco-uccx#readme",
+  "dependencies": {
+    "request-promise": "^2.0.0"
+  }
+}
