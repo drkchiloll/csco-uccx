@@ -29,8 +29,11 @@ Promise.each(skills, (skill) => {
 })
 
 // Get Configured Skills
-uccx.skill({}).then((resp) => {
+uccx.skill({
+  method: 'GET'
+}).then((resp) => {
   var skills = resp.skill;
+  console.log(skills);
   // Modify Skills
   var newSkill = ['experter', 'intermediater', 'beginnier'];
   return Promise.map(skills, (skill, idx) => {
@@ -42,7 +45,7 @@ uccx.skill({}).then((resp) => {
 })
 
 // Get All Skills and Delete Them
-uccx.skill({}).then((resp) => {
+uccx.skill({ method: 'GET' }).then((resp) => {
   var skills = resp.skill;
   Promise.map(skills, (skill) => {
     uccx.skill({id: skill.skillId}).then((resp) => {
